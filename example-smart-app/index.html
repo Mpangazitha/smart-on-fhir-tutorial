@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-    <title>Example-SMART-App</title>
+    <title>Mpangazitha Example-SMART-App</title>
 
     <link rel='stylesheet' type='text/css' href='./src/css/example-smart-app.css'>
     <!--
@@ -98,4 +98,17 @@
       );
     </script>
   </body>
+
+  <script lang="javascript">
+
+      FHIR.oauth2.ready(function(smart){
+
+        alert('ready');
+          var smart = FHIR.client({
+          serviceUrl: 'https://r2.smarthealthit.org',
+          patientId: 'smart-1137192'
+        });
+      });
+
+  </script>
 </html>
