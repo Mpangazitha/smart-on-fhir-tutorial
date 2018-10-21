@@ -25,7 +25,11 @@
         $.when(pt, obv).fail(onError);
 
         $.when(pt, obv).done(function(patient, obv) {
+<<<<<<< HEAD
           //console.log(obv[0].toString());
+=======
+          console.log(obv.toString());
+>>>>>>> testing
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
