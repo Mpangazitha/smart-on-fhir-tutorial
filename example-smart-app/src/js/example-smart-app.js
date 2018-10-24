@@ -20,7 +20,7 @@ if(diagR != null)
 }
 else
 {
-  console.log('diagR is null);
+  console.log('diagR is null');
 }
         
 //
