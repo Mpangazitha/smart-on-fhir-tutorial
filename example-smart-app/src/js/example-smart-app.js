@@ -10,7 +10,7 @@
     function onReady(smart)  {
       if (smart.hasOwnProperty('patient')) {
 
-//
+/*
 var diagR = smart.patient.api.fetchAll({
   type: 'DiagnosticReport'
 });
@@ -28,7 +28,7 @@ else
   console.log('diagR is null');
 }
         
-//
+*/
 
         var patient = smart.patient;
         var pt = patient.read();
