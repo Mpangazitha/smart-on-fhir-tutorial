@@ -11,7 +11,7 @@
       if (smart.hasOwnProperty('patient')) {
 
 //
-var diagR = smart.api.fetchAll({
+var diagR = smart.patient.api.fetchAll({
   type: 'DiagnosticReport'
 });
 if(diagR != null)
