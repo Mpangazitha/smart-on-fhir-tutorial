@@ -14,8 +14,15 @@
 var diagR = smart.api.fetchAll({
   type: 'DiagnosticReport'
 });
-
-console.log(diagR.toString());
+if(diagR != null)
+{
+  console.log(diagR);
+}
+else
+{
+  console.log('diagR is null);
+}
+        
 //
 
         var patient = smart.patient;
