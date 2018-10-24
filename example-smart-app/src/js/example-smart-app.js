@@ -16,8 +16,12 @@ var diagR = smart.api.fetchAll({
 });
 if(diagR != null)
 {
-  var jDiagR = JSON.stringify(diagR, null, 4);
-  console.log(jDiagR);
+  var outP = 'begin|';
+  for(var prop in diagR)
+  {
+    outP += ':' + diagR[prop] + '|';
+  }
+  console.log(outP);
 }
 else
 {
