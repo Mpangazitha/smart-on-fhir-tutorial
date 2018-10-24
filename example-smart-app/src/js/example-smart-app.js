@@ -16,7 +16,8 @@ var diagR = smart.api.fetchAll({
 });
 if(diagR != null)
 {
-  console.log(diagR);
+  var jDiagR = JSON.stringify(diagR, null, 4);
+  console.log(jDiagR);
 }
 else
 {
