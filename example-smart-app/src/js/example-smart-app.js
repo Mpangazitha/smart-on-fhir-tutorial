@@ -9,6 +9,15 @@
 
     function onReady(smart)  {
       if (smart.hasOwnProperty('patient')) {
+
+//
+var diagR = smart.api.fetchAll({
+  type: 'DiagnosticReport'
+});
+
+console.log(diagR.toString());
+//
+
         var patient = smart.patient;
         var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
